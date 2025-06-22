@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#8E24AA"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imgFoodItem_NHDuong"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/txtFoodNameItem_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFoodDescItem_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:text="Địa chỉ nhà hàng" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnInfo_NHDuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LƯU THÔNG TIN"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

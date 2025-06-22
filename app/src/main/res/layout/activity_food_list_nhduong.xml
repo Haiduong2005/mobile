@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#ffffff">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtTitle_NHDuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Foody"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:padding="12dp" />
+
+    <!-- Banner món đặc biệt -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#880E4F"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Cơm sườn xào nấm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:text="Giá chỉ\n35.000đ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/com_suon_xao"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <!-- Danh sách món ăn -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="Danh sách món ăn của nhà hàng">
+
+        <LinearLayout
+            android:id="@+id/foodListLayout_NHDuong"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <!-- Menu dưới -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#00796B"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_view"
+            android:contentDescription="Trang chủ"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            android:contentDescription="Giỏ hàng"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_manage"
+            android:contentDescription="Tài khoản"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txtRestaurantTitle_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D81B60"
+            android:padding="12dp" />
+    </LinearLayout>
+</LinearLayout>

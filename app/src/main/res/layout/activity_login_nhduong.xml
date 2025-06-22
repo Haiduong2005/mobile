@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_margin="32dp"
+        android:background="#DDFFFFFF"
+        android:elevation="4dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img_1"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foody App"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tên đăng nhập -->
+        <EditText
+            android:id="@+id/edtUsername_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/edtPassword_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="10dp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Đăng nhập -->
+        <Button
+            android:id="@+id/btnLogin_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG NHẬP"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <!-- Đăng ký -->
+        <TextView
+            android:id="@+id/txtRegister_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản? Đăng ký"
+            android:textColor="#8A2BE2"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center" />
+
+        <!-- Xin chào -->
+        <TextView
+            android:id="@+id/txtWelcome_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xin chào"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#009688"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

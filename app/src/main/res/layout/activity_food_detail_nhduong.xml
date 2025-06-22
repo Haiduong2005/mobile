@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtFoodTitle_NHDuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bánh mì bò kho"
+        android:textSize="22sp"
+        android:textColor="#D81B60"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold" />
+
+    <!-- Ảnh món ăn -->
+    <ImageView
+        android:id="@+id/imgFood_NHDuong"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banhmi1" />
+
+    <!-- Chọn size -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnSmall_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NHỎ\n10000đ"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnMedium_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VỪA\n29000đ"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnLarge_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LỚN\n51000đ"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Mô tả -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtDescription_NHDuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bữa ăn đơn giản cho người đơn giản!"
+        android:layout_margin="12dp"
+        android:textSize="14sp" />
+
+    <!-- Thông tin cửa hàng + giỏ hàng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#8E24AA"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtShopName_NHDuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin cửa hàng"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice_NHDuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000 VND"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Nút trừ -->
+        <Button
+            android:id="@+id/btnMinus_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="18sp"
+            android:layout_marginEnd="4dp"/>
+
+        <!-- Số lượng -->
+        <TextView
+            android:id="@+id/txtQuantity_NHDuong"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <!-- Nút cộng -->
+        <Button
+            android:id="@+id/btnPlus_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Giỏ hàng -->
+        <ImageView
+            android:id="@+id/imgCart_NHDuong"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/ic_menu_add"
+            android:contentDescription="Giỏ hàng"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_margin="32dp"
+        android:background="#DDFFFFFF"
+        android:elevation="4dp"
+        android:gravity="center_horizontal">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG KÍ"
+            android:textColor="#8A2BE2"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/edtUsernameReg_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/edtPasswordReg_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- RePassword -->
+        <EditText
+            android:id="@+id/edtRePassword_NHDuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RePassword"
+            android:drawableStart="@drawable/ic_repass"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Mũi tên lớn đăng ký -->
+        <ImageButton
+            android:id="@+id/btnRegister_NHDuong"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_submit"
+            android:background="@null"
+            android:contentDescription="Đăng ký"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Text đăng nhập -->
+        <TextView
+            android:id="@+id/txtBackLogin_NHDuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản? Đăng nhập ngay"
+            android:textColor="#8A2BE2"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
